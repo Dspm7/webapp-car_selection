@@ -22,9 +22,9 @@
                 <label for="search">Найди свое авто</label>
                 <input 
                     type="text" 
-                   class="form-control" 
-                     id="search" 
-                   placeholder="Введите марку или модель"
+                    class="form-control" 
+                    id="search" 
+                    placeholder="Введите марку или модель"
                     v-model="search"
                 > 
             </div>
@@ -36,7 +36,7 @@
                 @click="selectCar(index)"
                 :class="{'active': selectCarIndex === index}"
             >
-                {{ car.name }} - {{car.model}}
+                {{ car.name }} - {{ car.model }}
             </li>
         </ul>
         </div>
